@@ -17,6 +17,8 @@ Acesse o projeto clicando [aqui](https://marcus88santos.github.io/t7-oracle-next
 git clone https://github.com/marcus88santos/t7-oracle-next-education-challenge-alurageek.git
 ```
 
+<br />
+
 ## ✔️ Técnicas e tecnologias utilizadas
 
 | [![My Skills](https://skillicons.dev/icons?i=html)]() | [![My Skills](https://skillicons.dev/icons?i=css)]() | [![My Skills](https://skillicons.dev/icons?i=js)]() |  
