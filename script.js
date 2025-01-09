@@ -65,7 +65,7 @@ btnDelete.addEventListener("click", (e) => {
 const formSubmit = document.querySelector(".btn-add");
 
 formSubmit.addEventListener("click", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   const productName = document.querySelector(
     ".add-product > form > input[name='name']"
   ).value;
@@ -95,7 +95,7 @@ const deleteProduct = document.querySelectorAll(".my-products__icon-delete");
 
 deleteProduct.forEach((item) => {
   item.addEventListener("click", (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const key = e.target.parentElement.parentElement.getAttribute("key");
     try {
       productDeleteDb(key);
