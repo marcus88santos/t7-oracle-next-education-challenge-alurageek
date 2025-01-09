@@ -79,6 +79,7 @@ formSubmit.addEventListener("click", (e) => {
   } catch (error) {
     alert(error);
   }
+  location.reaload();
 });
 
 // DELETE PRODUCT
@@ -87,6 +88,7 @@ const deleteProduct = document.querySelectorAll(".my-products__icon-delete");
 
 deleteProduct.forEach((item) => {
   item.addEventListener("click", (e) => {
+    e.preventDefault();
     const key = e.target.parentElement.parentElement.getAttribute("key");
     try {
       productDeleteDb(key);
@@ -94,5 +96,6 @@ deleteProduct.forEach((item) => {
       alert(error);
       
     }
+    location.reaload()
   });
 })
