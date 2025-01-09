@@ -65,7 +65,7 @@ btnDelete.addEventListener("click", (e) => {
 const formSubmit = document.querySelector(".btn-add");
 
 formSubmit.addEventListener("click", (e) => {
-  // e.preventDefault();
+  e.preventDefault();
   const productName = document.querySelector(
     ".add-product > form > input[name='name']"
   ).value;
@@ -86,7 +86,7 @@ formSubmit.addEventListener("click", (e) => {
     alert(error);
   }
   document.querySelector(".add-product > form").reset();
-  location.reaload();
+  window.location.href("../index.html");
 });
 
 // DELETE PRODUCT
@@ -95,13 +95,13 @@ const deleteProduct = document.querySelectorAll(".my-products__icon-delete");
 
 deleteProduct.forEach((item) => {
   item.addEventListener("click", (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     const key = e.target.parentElement.parentElement.getAttribute("key");
     try {
       productDeleteDb(key);
     } catch (error) {
       alert(error);
     }
-    location.reaload();
+    window.location.href('../index.html');
   });
 });
