@@ -1,4 +1,4 @@
-import { productsListDb, productAddDb, productDeleteDb } from "./APIconect.js";
+import { productAddDb, productDeleteDb, productsListDb } from "./APIconect.js";
 
 const productsList = await productsListDb();
 const logo = document.querySelectorAll(".logo");
@@ -57,7 +57,7 @@ btnDelete.addEventListener("click", (e) => {
   e.preventDefault();
   const form = document.querySelector(".add-product > form");
   // console.log(form);
-  form.reset()
+  form.reset();
 });
 
 // SUBMIT FORM
@@ -66,9 +66,15 @@ const formSubmit = document.querySelector(".btn-add");
 
 formSubmit.addEventListener("click", (e) => {
   e.preventDefault();
-  const productName = document.querySelector(".add-product > form > input[name='name']").value
-  const productPrice = document.querySelector(".add-product > form > input[name='price']").value;
-  const productSrc = document.querySelector(".add-product > form > input[name='src']").value;
+  const productName = document.querySelector(
+    ".add-product > form > input[name='name']"
+  ).value;
+  const productPrice = document.querySelector(
+    ".add-product > form > input[name='price']"
+  ).value;
+  const productSrc = document.querySelector(
+    ".add-product > form > input[name='src']"
+  ).value;
   const product = {
     name: productName,
     preco: productPrice,
@@ -79,6 +85,7 @@ formSubmit.addEventListener("click", (e) => {
   } catch (error) {
     alert(error);
   }
+  document.querySelector(".add-product > form").reset();
   location.reaload();
 });
 
@@ -94,8 +101,7 @@ deleteProduct.forEach((item) => {
       productDeleteDb(key);
     } catch (error) {
       alert(error);
-      
     }
-    location.reaload()
+    location.reaload();
   });
-})
+});
