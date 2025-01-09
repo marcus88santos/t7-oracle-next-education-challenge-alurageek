@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ONE - Challenge AluraGeek</title>
-    <script src="./script.js" defer></script>
+    <script src="./script.js" type="module" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,9 +23,9 @@
       <section class="add-product">
         <form>
           <h1 class="title">ADICIONAR PRODUTO:</h1>
-          <input type="text" name="name" placeholder="Nome..." />
-          <input type="text" name="preco" placeholder="Preço..." />
-          <input type="text" name="imagem" placeholder="Link da imagem..." />
+          <input type="text" name="name" placeholder="Nome..." required/>
+          <input type="number" name="price" placeholder="Preço..." required/>
+          <input type="text" name="src" placeholder="Url da imagem..." required/>
           <div class="btns">
             <button type="submit" class="btn btn-dark btn-add">
               Salvar

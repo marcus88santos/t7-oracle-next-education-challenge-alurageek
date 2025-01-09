@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Stormtrooper",
+      "preco": 60,
+      "src": "./src/assets/product-stormtrooper.png"
+    },
+    {
+      "id": "2",
+      "name": "Game Boy Classic",
+      "preco": 60,
+      "src": "./src/assets/product-game-boy-classic.png"
+    },
+    {
+      "id": "3",
+      "name": "Caneca Yoda",
+      "preco": 60,
+      "src": "./src/assets/product-caneca-yoda.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Stormtrooper",
+      "preco": 60,
+      "src": "./src/assets/product-stormtrooper.png"
+    },
+    {
+      "id": "5",
+      "name": "Game Boy Classic",
+      "preco": 60,
+      "src": "./src/assets/product-game-boy-classic.png"
+    },
+    {
+      "id": "6",
+      "name": "Caneca Yoda",
+      "preco": 60,
+      "src": "./src/assets/product-caneca-yoda.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Stormtrooper",
+      "preco": 60,
+      "src": "./src/assets/product-stormtrooper.png"
+    },
+    {
+      "id": "d3d5",
+      "name": "Caneca Geek",
+      "preco": "11.31",
+      "src": "https://cdn.awsli.com.br/2500x2500/2517/2517292/produto/186095071/c7fe7c9e59.jpg"
+    }
+  ]
+}

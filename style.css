@@ -104,6 +104,7 @@ main {
 
 .btn {
   border-radius: 16px;
+  cursor: pointer;
   font-size: 20px;
   font-weight: 500;
   height: 56px;
