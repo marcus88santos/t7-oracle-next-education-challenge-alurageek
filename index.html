@@ -20,24 +20,26 @@
     </header>
     <main>
       <!-- ADD PRODUCT -->
-      <section id="add-product">
+      <section class="add-product">
         <form>
           <h1 class="title">ADICIONAR PRODUTO:</h1>
           <input type="text" name="name" placeholder="Nome..." />
           <input type="text" name="preco" placeholder="Preço..." />
           <input type="text" name="imagem" placeholder="Link da imagem..." />
           <div class="btns">
-            <button type="submit" id="btn-add" class="btn btn-dark">
+            <button type="submit" class="btn btn-dark btn-add">
               Salvar
             </button>
-            <button id="btn-reset" class="btn btn-light">Limpar</button>
+            <button class="btn btn-light btn-reset">Limpar</button>
           </div>
         </form>
       </section>
       <!-- MY PRODUCTS -->
-      <section id="my-products">
+      <section class="my-products">
         <h1 class="title">MEUS PRODUTOS:</h1>
-        <div id="my-products__list"></div>
+        <div class="my-products__wrapper">
+          <div class="my-products__list"></div>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->

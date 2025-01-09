@@ -3,7 +3,7 @@
   font-family: "IBM Plex Mono", serif;
   margin: 0;
   padding: 0;
-  --color-purple: #5D04D9;
+  --color-purple: #5d04d9;
   --color-dark-blue: #03318c;
 }
 
@@ -55,7 +55,7 @@ main {
 
 /* ADD PRODUCT */
 
-#add-product {
+.add-product {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ main {
   padding-inline: 40px;
 }
 
-#add-product form {
+.add-product form {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -73,13 +73,13 @@ main {
   margin-bottom: 40px;
 }
 
-#add-product h1 {
+.add-product h1 {
   /* width: 350px; */
   margin-top: 40px;
   text-align: center;
 }
 
-#add-product input {
+.add-product input {
   border: 3px solid var(--color-dark-blue);
   border-radius: 32px;
   color: var(--color-dark-blue);
@@ -89,9 +89,9 @@ main {
   width: 100%;
 }
 
-#add-product input::placeholder {
+.add-product input::placeholder {
   color: var(--color-dark-blue);
-} 
+}
 
 .btns {
   display: flex;
@@ -124,17 +124,17 @@ main {
 
 /* MY PRODUCTS */
 
-#my-products {
+.my-products {
   display: flex;
   flex-direction: column;
 }
 
-#my-products h1 {
+.my-products h1 {
   margin-block: 56px;
   text-align: center;
 }
 
-#my-products__list {
+.my-products__list {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -210,10 +210,77 @@ footer span {
   font-weight: 100;
 }
 
-/* @media (450px < width < 1300px) {
-  
-}
+@media (width > 1100px) {
+  main {
+    flex-direction: row-reverse;
+    gap: 24px;
+    padding: 1% 4%;
+  }
 
-@media (width >= 1300px) {
-  
-} */
+  .title {
+    font-size: 26px;
+  }
+
+  .font-press-start {
+    font-size: 26px;
+  }
+
+  span {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+
+  /* MY PRODUCTS */
+
+  .my-products {
+    justify-content: start;
+    padding: 0;
+  }
+
+  .my-products__list {
+    box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
+    height: 550px;
+    padding: 32px 40px 16px 16px;
+    overflow-y: scroll;
+  }
+
+  .my-products > h1 {
+    margin-bottom: 32px;
+  }
+
+  .my-products__container {
+    overflow: visible;
+  }
+
+  /* ADD PRODUCT */
+
+  .add-product {
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .add-product h1 {
+    margin-top: 56px;
+  }
+
+  .add-product form {
+    gap: 40px;
+    padding-inline: 5%;
+    width: 100%;
+  }
+
+  input {
+    font-size: 18px !important;
+    height: 64px !important;
+  }
+
+  .btn {
+    font-size: 26px !important;
+    height: 64px !important;
+  }
+}

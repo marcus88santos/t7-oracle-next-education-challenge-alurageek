@@ -29,10 +29,15 @@ const productsList = [
     preco: 60,
     img: "./src/assets/product-caneca-yoda.jpg",
   },
+  {
+    name: "Caneca Yoda",
+    preco: 60,
+    img: "./src/assets/product-caneca-yoda.jpg",
+  },
 ];
 
 const logo = document.querySelectorAll(".logo");
-const productsObjs = document.getElementById("my-products__list");
+const productsObjs = document.querySelector(".my-products__list");
 const productsContainer = (i) => {
 
   // return (
@@ -46,7 +51,7 @@ const productsContainer = (i) => {
 
     let container = '<div class="my-products__container">';
     for (let j = 0; j < 3; j++) {
-      if (productObj(productsList[i + j])) {
+      if (i + j < productsList.length) {
         container += `${productObj(productsList[i + j])}`;
       }
     }
